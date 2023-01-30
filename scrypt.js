@@ -30,15 +30,15 @@ function creatBoard(){
 function squareHover(e){
   if(e.target.classList.contains("square")){
   const color = getRandomColor();
-  this.style.background = `${color}`;
+  e.target.style.background = `${color}`;
   // this.style.background = `red`;
-  this.style.boxShadow = `0 0 3px ${color},0 0 10px ${color}`;
+  e.target.style.boxShadow = `0 0 3px ${color},0 0 10px ${color}`;
   }
 }
 
 function squareLeave(e){
   if(e.target.classList.contains("square")){
-  this.style.background = `rgb(41, 41, 41)`;
-  this.style.boxShadow = `0 0 2px rgb(0, 0, 0)`
+  e.target.style.background = `rgb(41, 41, 41)`;
+  e.target.style.boxShadow = `0 0 2px rgb(0, 0, 0)`
   }
 }
