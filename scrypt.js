@@ -8,9 +8,9 @@ for(let i = 0; i < count; i++){
   creatBoard()
 }
 
-board.addEventListener("mouseover", () => squareHover);
+//board.addEventListener("mouseover", () => squareHover);
 
-board.addEventListener("mouseleave",() => squareLeave);
+//board.addEventListener("mouseleave",() => squareLeave);
 
 function getRandomColor(){
   let key = Math.floor(Math.random() * allColor.length);
@@ -21,8 +21,8 @@ function creatBoard(){
   let square = document.createElement('div');
   square.classList.add('square')
   board.append(square);
-  //square.addEventListener('mouseover', squareHover);
-  //square.addEventListener('mouseleave', squareLeave);
+  square.addEventListener('mouseover', squareHover);
+  square.addEventListener('mouseleave', squareLeave);
 }
 
 
