@@ -8,9 +8,9 @@ for(let i = 0; i < count; i++){
   creatBoard()
 }
 
-board.addEventListener("mouseover", squareHover);
+board.addEventListener("mouseover", () => squareHover);
 
-board.addEventListener("mouseleave", squareLeave)
+board.addEventListener("mouseleave",() => squareLeave);
 
 function getRandomColor(){
   let key = Math.floor(Math.random() * allColor.length);
